@@ -1,0 +1,121 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1c1c;
+    border-color: #9b907f;
+    color: #fff;
+}
+
+header {
+    background-color: #171610;
+    color: #ddd;
+    padding: 2px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px ;
+    font-size: 13px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dfceb6;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #b4b1e9;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h1, section h2 {
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%; /* Ensures the image does not exceed its original size */
+    height: auto; /* Maintains the aspect ratio of the image */
+     width: 85%; /* Set the width of the image */
+     height: 450px; /* Set the height of the image */
+     object-fit: cover; /* Adjust how the image fills its container */
+     margin: 10px 0; /* Add margin for spacing around the image */
+     display: block; /* Ensures proper centering */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #dfceb6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+/* Media Query for Tablets and Smaller Screens */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 480px) {
+    header {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav ul li {
+        margin-right: 5px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
