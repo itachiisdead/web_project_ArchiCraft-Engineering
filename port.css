@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: rgba(67, 66, 63, 0.7);/* Using rgba for transparency */
+    background-color: rgba(97, 96, 95, 0.7);/* Using rgba for transparency */
     color: #fff7f7;
     padding: 2px;
     text-align: center;
@@ -32,11 +32,14 @@ header {
     color: #fff5e6;
     
 }
-h3{
+h2{
     text-align: left;
     margin-top: 5px;
     margin-left: 5px;
     font-size: 25px;
+}
+h3{
+    text-align: center;
 }
 nav {
    
