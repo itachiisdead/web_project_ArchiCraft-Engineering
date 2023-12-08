@@ -15,14 +15,13 @@ body {
 }
 
 header {
-    background-color: #171610;
-    color: #ddd;
+    background-color: rgba(67, 66, 63, 0.7);/* Using rgba for transparency */
+    color: #fff7f7;
     padding: 2px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-
 .inner-back-text {
     position: absolute;
     top: 50%;
@@ -31,14 +30,22 @@ header {
     text-align: center;
     font-size: 40px;
     color: #fff5e6;
+    
 }
-
+h3{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+}
 nav {
-    background-color: #333;
-    display: flex;
-    justify-content: space-around;
-    padding: 14px;
-    font-size: 13px;
+   
+    color: #fffbfb;
+    padding: 2px;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 nav ul {
