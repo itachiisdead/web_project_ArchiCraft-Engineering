@@ -20,7 +20,7 @@ body {
 
 
 header {
-    background-color: rgba(97, 96, 95, 0.7);/* Using rgba for transparency */
+    background-color: rgba(67, 66, 63, 0.7);/* Using rgba for transparency */
     color: #fff7f7;
     padding: 2px;
     text-align: center;
@@ -52,7 +52,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff4e6;
+    color: #dfceb6;
     font-size: 20px;
 }
 
@@ -97,7 +97,7 @@ h3{
 
 .inner-back-text h1 {
     font-size: 50px;
-    color: white;
+    color: rgb(219, 215, 215);
     text-align: center;
     line-height: 5rem;
     text-transform: uppercase;
