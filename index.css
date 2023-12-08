@@ -6,8 +6,10 @@
     text-transform: capitalize;
     box-sizing: border-box;
     transition: .2s;
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
 
 :root {
     --headerclr: #222533;
