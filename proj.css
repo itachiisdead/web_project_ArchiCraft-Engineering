@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     text-transform: capitalize;
     box-sizing: border-box;
@@ -19,52 +20,6 @@ html {
     overflow-x: hidden;
 }
 
-.header {
-    padding: 2rem 4%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--headerclr);
-    z-index: 10000;
-}
-
-#logo {
-    color: var(--mainclr);
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.nav a {
-    color: white;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-.nav a:hover {
-    color: var(--mainclr);
-}
-
-.icon-header div {
-    color: white;
-    margin-left: 1.5rem;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.icon-header div:hover {
-    color: var(--mainclr);
-}
-
-#menu-bar {
-    display: none;
-}
-
-.nav.active {
-    top: 100%;
-}
 
 .background-image {
     background: url(imgs/backgroud\ image.png);
@@ -115,11 +70,11 @@ html {
 
 .first-btn,
 .second-btn {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 2.1rem;
     background: var(--mainclr);
     border-radius: 15px;
     color: var(--headerclr);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .first-btn:hover,
@@ -128,24 +83,6 @@ html {
     color: white;
     letter-spacing: 3px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width:767px) {
     html {
