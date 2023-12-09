@@ -62,7 +62,7 @@ nav ul li a:hover {
 
 :root {
     --headerclr: #222533;
-    --mainclr: #ffcb0f;
+    --mainclr: #b77f42;
 }
 
 html {
@@ -97,7 +97,7 @@ h3{
 
 .inner-back-text h1 {
     font-size: 50px;
-    color: rgb(219, 215, 215);
+    color: rgb(255, 255, 255);
     text-align: center;
     line-height: 5rem;
     text-transform: uppercase;
@@ -131,6 +131,7 @@ h3{
     border-radius: 15px;
     color: var(--headerclr);
     font-size: 1.8rem;
+    background-color: #b77f42;
 }
 
 .first-btn:hover,
