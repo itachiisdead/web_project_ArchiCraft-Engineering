@@ -168,8 +168,27 @@ html {
 /* review  */
 
 
-
-.reviews .box-container{
+.reviews{
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+ }
+ 
+ .reviews .title{
+    text-align: center;
+    margin-bottom: 2rem;
+ }
+ 
+ .reviews  h1{
+    font-size: 3rem;
+    color:#333;
+ }
+ 
+ .reviews .title p{
+    font-size: 1.5rem;
+    color:#777;
+ }
+ 
+ .reviews .box-container{
     max-width: 1200px;
     margin:0 auto;
     display: grid;
@@ -220,7 +239,7 @@ html {
     color:#333;
     margin-top: 1rem;
  }
- 
+
 
 
 
