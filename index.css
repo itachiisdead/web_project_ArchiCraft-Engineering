@@ -70,7 +70,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #222533;
 }
-
+nav ul li a.active {
+    color: #b77f42;
+    font-weight: bold;
+}
 .user {
     display: flex;
     align-items: center;
