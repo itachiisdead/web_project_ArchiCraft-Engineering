@@ -60,11 +60,7 @@ nav a:hover, header h1:hover {
     display: none;
 }
 
-/* Root Variables */
-:root {
-    --headerclr: #222533;
-    --mainc: #222533;
-}
+
 
 /* HTML Styles */
 html {
@@ -132,17 +128,61 @@ html {
     padding: 1.5rem 2.1rem;
     background: #b77f42;
     border-radius: 15px;
-    color: var(--headerclr);
+    color: #222533;
     font-size: 1.8rem;
     background-color: #b77f42;
 }
 
 .first-btn:hover,
 .second-btn:hover {
-    background: var(--headerclr);
+    background: #222533;
     color: white;
     letter-spacing: 3px;
 }
+/* welcome section style */
+
+
+.welcome{
+    padding: 3rem 7%;
+}
+.main-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.inner-welcome{
+    flex: 1 1 45rem;
+}
+.welcome-text h1{
+    font-size: 40px;
+    color: #222533;
+
+}
+.welcome-text p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 25px;
+}
+.welcome-text a{
+    padding: 1.5rem 4rem;
+    background: #b77f42;
+    color: #222533;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.welcome-text a:hover{
+    background: #222533;
+    color: white;
+}
+.inner-welcome img{
+width: 80%;
+}
+
+
+
+
 
 /* Reviews Section Styles */
 .reviews {
