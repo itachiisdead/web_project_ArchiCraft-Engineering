@@ -26,14 +26,32 @@ header {
     z-index: 3;
     top: 0%;
 }
+.logo{
+    display: flex;
+    
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    margin-left: 24px;
+    vertical-align: middle;
+}
+.logo h1{
+    font-size: 26px;
+    line-height:48px;
+    font-weight: 600;
+    text-align: start;
 
+    color: #b78d65;
+
+    font-family: "Teko",sans-serif;
+}
 header nav {
     width: 50%;
 }
 
-header h1 {
-    font-size: 35px;
-}
+
 
 header ul {
     list-style: none;
@@ -45,6 +63,7 @@ header ul {
 
 nav ul li a {
     text-decoration: none;
+
     color: #b77f42;
 }
 
@@ -180,9 +199,89 @@ html {
 width: 80%;
 }
 
+/* why us section */
+
+#why_us {
+    background: #f2f7fa none repeat scroll 0 0;
+    padding-bottom: 50px;
+    
+}
 
 
+.head_title h2{
+    font-size: 25px;
+    color: #222533;
+    margin: 60px 0 20px;
+    font-family:'futura_ltbold', sans-serif;
+    text-align: center;
 
+}
+.head_title p {
+    line-height: 2.3rem;
+    margin: 0 0 10px;
+    display: block;
+    font-size: 15px;
+    color: #222533;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.row  {
+    display: flex;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-center {
+    text-align: center;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row .cont{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.why_us_item {
+    padding-top: 55px;
+}
+
+#why_us .fa {
+    border-radius: 100%;
+    box-shadow: 0 0 0 10px #ffcb0f, 0 0 0 20px #fadb64, 0 0 0 30px #f7e59c;
+    padding: 38px;
+    font-size: 45px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* Reviews Section Styles */
 .reviews {
