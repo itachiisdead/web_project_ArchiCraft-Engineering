@@ -159,6 +159,8 @@ nav a:hover, header h1:hover {
     line-height: 180%;
     text-align: center;
     text-wrap: balance;
+    font-weight: 700;
+    font-family: "Teko", sans-serif;
 }
 
 @media(max-width:847px) {
