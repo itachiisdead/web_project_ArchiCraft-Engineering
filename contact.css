@@ -149,6 +149,8 @@ form {
 
 form div {
     display: flex;
+    margin: 10px 0;
+    gap: 5px ;
     flex-direction: column;
 }
 

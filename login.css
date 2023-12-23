@@ -56,6 +56,9 @@ button {
 	transition: transform 80ms ease-in;
 }
 
+button a{
+	color: #ffffff;
+}
 button:active {
 	transform: scale(0.95);
 }
