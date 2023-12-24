@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ArchiCraft Engineering</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="imgs/icon-1.png" alt="icon">
+            <h1> ArchiCraft </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="port.html">portfolio</a></li>
+                <li><a href="login.html" class="user">
+                        <i class="fa-solid fa-user "></i>
+                    </a></li>
+            </ul>
+        </nav>
+        <i id="ham" class="fa-solid fa-bars hamburger"></i>
+    </header>
+
+<!-- Container for the image gallery -->
+<div class="gallery">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="imgs/s1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="imgs/s2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="imgs/s3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="imgs/s4.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="imgs/s5.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"></div>
+        <img src="imgs/s6.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+    </div>
+  </div>
+   <!-- Project Details -->
+   <div class="project-details">
+    <h3> S RESIDENCE </h3>
+    <p> Description: <br>
+        In the world of architecture, the boundaries of what a family home can be are constantly being pushed,
+        and one exciting example of this is a modern, angular home clad in metal panels.
+
+        This remarkable property, situated in Sandhurst and enveloped by large, ancient trees, sets a new
+        standard in luxury boutique residential living by blending artistic, abstract, sculptural design with
+        practical living space and modern amenities, making it a standout in any neighborhood.
+
+        Unlike traditional residential designs, this distinctive architectural apartment concept features a
+        shared basement and ground level housing a protected porte cochère, entertainment spaces, a barbecue
+        area, a commercial kitchen, and a dining area suitable for large-scale catering, a large gymnasium,
+        an indoor swimming pool, parking for 12 vehicles, as well as a private theater accommodating 30 guests,
+        complete with an entertainment area and bar.
+
+        The upper two floors consist of private apartments for the owners and their two children’s families:
+        each floor features a spacious living room with an open-plan kitchen, dining room, study, and four
+        suites.
+
+        The northern elevations on all three floors are entirely glazed, offering a unique and breathtaking
+        tree-house experience while bringing in natural light and providing a sense of warmth and grandeur
+        within the home. The use of black aluminum panels on the exterior of the home not only provides an
+        aesthetic appeal and a touch of sophistication but also serves a functional purpose, shading and
+        protecting the home from harsh weather elements, making it a durable and low-maintenance option.
+
+        In conclusion, this modern, angular home clad in steel panels is a stunning example of how architecture
+        can push the boundaries of what a home can be. Its unique design and functional features make it not
+        only aesthetically pleasing but also energy-efficient and sustainable, setting a new standard in
+        luxurious residential living.</p>
+    <p>Location: City, Country</p>
+    <p>Architect: John Doe</p>
+    <!-- Add more project details as needed -->
+</div>
+
+    <!-- Footer Start -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt"></i> +012 345 67890</p>
+                    <p><i class="fa fa-envelope"></i> info@example.com</p>
+                </div>
+                <div class="col">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Architecture</a></li>
+                        <li><a href="#">3D Animation</a></li>
+                        <li><a href="#">House Planning</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Sustainability Solutions
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for updates.</p>
+                    <div class="newsletter-form">
+                        <input type="text" placeholder="Your email">
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
