@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -95,11 +96,11 @@ h3 {
 
   .gallery {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-
     margin: 100px ;
 }
 img {
@@ -119,26 +120,28 @@ img {
   .cursor {
     cursor: pointer;
   }
-  
-.prev,
-.next {
+  .arrows{
+    display: flex;
+  }
+.arrows a{
     cursor: pointer;
-    position: relative;
-    right: 55%;
-    transform: translateY(-50%); /* Centering trick */
     width: auto;
-    padding: 16px;
+    padding: 10px 20px;
     color: white;
     display: flex;
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .next {
     right: 0;
-
     border-radius: 3px 0 0 3px;
 }
 
@@ -146,20 +149,19 @@ img {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-  
-  
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
+
+.row{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.row img{
+    width: 90px;
+    height: 90px;
+}
   
   .demo {
     opacity: 0.6;
@@ -172,25 +174,28 @@ img {
 
 .project-details {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 20px 0;
-
+    margin: 20px 0 40px;
 }
 .project-details p{
-    font-size: 20px;
+    width: 90%;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
     margin-bottom: 20px;
     margin-right: 2px;
     padding: 15px;
     color: #b7b7b7;
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     text-justify: inter-word;
 }
-.project-details h2{
+.project-details h3{
     font-size: 25px;
     font-weight: 600;
     line-height: 1.8;
@@ -201,7 +206,15 @@ img {
     text-align: justify;
     text-justify: inter-word;
 }
+.project-details span{
+ background-color: #935f33;
+ padding: 10px;
+ text-align: center;
+ font-size: 25px;
+}
+.project-details h2{
 
+}
 #ham {
     font-size: 20px;
     cursor: pointer;
@@ -212,8 +225,7 @@ img {
     width: 550px;
     height: 450px;
     border-radius: 15px;
-
-   
+    object-fit: cover;
 }
 
 @media(max-width:767px) {
