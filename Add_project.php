@@ -7,7 +7,7 @@
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
-    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>AdminHub</title>
 </head>
@@ -21,26 +21,20 @@
         <span class="text">AdminHub</span>
     </a>
     <ul class="side-menu top">
-        <li >
-            <a href="dashboard.html">
-                <i class='bx bxs-dashboard'></i>
-                <span class="text">Dashboard</span>
-            </a>
-        </li>
         <li>
-            <a href="current_projects.html">
+            <a href="current_projects.php">
                 <i class='bx bxs-shopping-bag-alt'></i>
                 <span class="text">Current projects</span>
             </a>
         </li>
-        <li>
-            <a href="Add_project.html">
+        <li class="active">
+            <a href="Add_project.php">
                 <i class='bx bx-plus'></i>
                 <span class="text">Add project</span>
             </a>
         </li>
-        <li class="active">
-            <a href="Edit_project.html">
+        <li >
+            <a href="Edit_project.php">
                 <i class='bx bxs-edit-alt'></i>
                 <span class="text">Edit project</span>
             </a>
@@ -48,9 +42,9 @@
     </ul>
     <ul class="side-menu">
         <li>
-            <a href="login-signup.html" class="logout">
+            <a href="login.php" class="logout">
                 <i class='bx bxs-log-out-circle'></i>
-                <span class="text" >Logout</span>
+                <span class="text">Logout</span>
             </a>
         </li>
     </ul>
@@ -79,34 +73,49 @@
                         </li>
                         <li><i class='bx bx-chevron-right'></i></li>
                         <li>
-                            <a class="active" href="#">Edit project</a>
+                            <a class="active" href="#">Add project</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </main>
-        <div class="form-container">
-            <form method="post" class="edit-form">
-                <div>
-                    <label for="id">ID</label>
-                    <input type="number" id="id" name="id">
-                </div>
-                <div>
-                    <label for="file">Image</label>
-                    <input type="file" id="file" name="img-src">
-                </div>
-                <div>
-                    <label for="title">Title</label>
-                    <input type="text" placeholder="project title" name="title" id="title">
-                </div>
-                <div>
-                    <label for="desc">Description</label>
-                    <textarea name="desc" id="desc" ></textarea>
-                </div>
-                <button type="submit" id="edit">Edit</button>
-            </form>
-            </div>
-            <script src="dash.js"></script>
+
+
+<div class="form-container">
+    <form  class="edit-form" id="projects" method="post" action="add.php">
+        <div>
+            <label for="id">ID</label>
+            <input type="number" id="id" name="id">
+        </div>
+        <div>
+            <label for="file">Image</label>
+            <input type="file" id="file" name="img-src">
+        </div>
+        <div>
+            <label for="title">Title</label>
+            <input type="text" placeholder="project title" name="title" id="title">
+        </div>
+        <div>
+            <label for="architect">Architect</label>
+            <input type="text" placeholder="architect" name="architect" id="architect">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+        </div>
+        <div>
+            <label for="price">Price Range</label>
+            <input type="text" placeholder="price range" name="price" id="price">
+        </div>
+        <button id="add" type="submit">Add</button>
+     
+     
+     
+
+    </form>
+    
+</div>
+
+            <script src="script.js"></script>
 </body>
 
 </html>
