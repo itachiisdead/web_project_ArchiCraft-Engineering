@@ -7,7 +7,7 @@
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dash.css">
 
     <title>AdminHub</title>
 </head>
@@ -105,7 +105,7 @@
                 <button type="submit" id="edit">Edit</button>
             </form>
             </div>
-            <script src="script.js"></script>
+            <script src="dash.js"></script>
 
 
 </body>

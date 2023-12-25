@@ -11,7 +11,9 @@ menuBar.addEventListener('click', function () {
 let id = document.getElementById('id');
 let img_src = document.getElementById('file');
 let title= document.getElementById('title');
-let desc = document.getElementById('desc');
+let architect = document.getElementById('architect');
+let description = document.getElementById('description'); 
+let price = document.getElementById('price');
 let add= document.getElementById('add');
 let data = []
 var selectedRow = null;
@@ -30,7 +32,9 @@ function readFormData() {
   formData["id"] = document.getElementById("id").value;
   formData["title"] = document.getElementById("title").value;
   formData["file"] = document.getElementById("file").value;
-  formData["desc"] = document.getElementById("desc").value;
+  formData["architect"] = document.getElementById("architect").value;
+  formData["description"] = document.getElementById("description").value;
+  formData["price"] = document.getElementById("price").value;
   return formData;
 }
 
@@ -56,7 +60,10 @@ function resetForm() {
   document.getElementById("id").value = "";
   document.getElementById("title").value = "";
   document.getElementById("file").value = "";
-  document.getElementById("desc").value = "";
+  document.getElementById("architect").value = "";
+  document.getElementById("description").value = "";
+  document.getElementById("price").value = "";
+
   selectedRow = null;
 }
 
@@ -65,7 +72,10 @@ function onEdit(td) {
   document.getElementById("id").value = selectedRow.cells[0].innerHTML;
   document.getElementById("title").value = selectedRow.cells[1].innerHTML;
   document.getElementById("file").value = selectedRow.cells[2].innerHTML;
-  document.getElementById("desc").value = selectedRow.cells[3].innerHTML;
+  document.getElementById("architect").value = selectedRow.cells[3].innerHTML;    
+  document.getElementById("description").value = selectedRow.cells[4].innerHTML;
+  document.getElementById("price").value = selectedRow.cells[5].innerHTML;
+
 }
 function updateRecord(formData) {
   selectedRow.cells[0].innerHTML = formData.fullName;

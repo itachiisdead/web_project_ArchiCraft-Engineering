@@ -25,7 +25,7 @@
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dash.css">
 
     <title>AdminHub</title>
 </head>
@@ -127,7 +127,7 @@
     </tbody>
 </table>
 
-            <script src="script.js">
+            <script src="dash.js">
 
 function myFunction() {
   fetch('delete.php')
