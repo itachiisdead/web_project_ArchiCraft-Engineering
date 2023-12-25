@@ -1,3 +1,20 @@
+<?PHP
+    session_start();
+    $host="localhost";
+        $user="root";
+        $pass="";
+        $db="db";
+       $connect= mysqli_connect($host,$user,$pass,$db); 
+
+    $projects= "select * from projects ";
+    $q=mysqli_query($connect,$projects);
+    $rows = $q -> fetch_all(MYSQLI_ASSOC);
+
+
+    
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,52 +58,33 @@
 
         <div class="inner-back-text">
             <h1>All projects </h1>
-
-
         </div>
     </div>
 
 
-
     <section class="services">
-        <div>
-            <section>
-                <img src="imgs/7.jpg" alt="img">
-                <h3>S RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/4.jpg" alt="img">
-                <h3>SANDTON RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/5.jpg" alt="img">
-                <h3>MOOIKLOOF HEIGHTS</h3>
-            </section>
-            <section>
-                <img src="imgs/8.jpg" alt="img">
-                <h3>K RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/9.jpg" alt="img">
-                <h3>KITISURU RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/10.jpg" alt="img">
-                <h3>WONDER RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/11.jpg" alt="img">
-                <h3>VICTORIA RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/12.jpg" alt="img">
-                <h3>WOODGREEN RESIDENCE</h3>
-            </section>
-            <section>
-                <img src="imgs/6.jpg" alt="img">
-                <h3>LATM RESIDENCE</h3>
-            </section>
-        </div>
+        <div class="box-container">
+                    <?php
+                    foreach ($rows as $row){
+                        echo " <div >
+                      <section>
+                        <img src='".$row['image']."' alt=''>
+                       
+                      </section>
+                      <section>
+                        <h3>".$row['title']."</h3>
+                        <div class='price'>"." price_range : ".$row['price_range']."</div>
+                        <div class='desc'>".$row['description']."</div>
+
+                      </section>
+                    </div> ";
+                    }
+                    
+                    ?>
+
+            </div>
+
+            
     </section>
 
     
@@ -137,3 +135,13 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
