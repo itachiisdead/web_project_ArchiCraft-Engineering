@@ -87,6 +87,34 @@ nav a:hover, header h1:hover {
 
 }
 
+
+/* Inner Back Button Styles */
+.inner-back-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-back-btn a {
+    margin-right: 1px;
+}
+
+
+.second-btn {
+    padding: .5rem .5rem;
+    background: #935f33;
+    border-radius: 15px;
+    color: #222533;
+    font-size: 1.2rem;
+    background-color: #935f33;
+}
+
+.second-btn:hover {
+    background: #222533;
+    color: white;
+    letter-spacing: 3px;
+}
+
+
 h2 {
     text-align: left;
     margin-top: 5px;

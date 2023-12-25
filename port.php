@@ -44,8 +44,8 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
 
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="port.html">portfolio</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="port.php">portfolio</a></li>
                 <li><a href="login-signup.html" class="user">
                         <i class="fa-solid fa-user "></i>
                     </a></li>
@@ -58,6 +58,9 @@
 
         <div class="inner-back-text">
             <h1>All projects </h1>
+            <div class="inner-back-btn">
+                    <a href="details.html" class="second-btn">explore our gallery</a>
+                </div>
         </div>
     </div>
 
