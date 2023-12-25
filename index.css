@@ -189,17 +189,27 @@ html {
 }
 
 .welcome-text p {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    margin-bottom: 25px;
+    font-size: 2rem;
+    padding: 3rem 0;
+    margin-bottom: 30px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #777777;
+
 }
 
 .welcome-text a {
     padding: 1.1rem 2rem;
-    background: #b77f42;
     color: white;
-    font-size: 1.5rem;
     border-radius: 15px;
+    padding: 1.5rem 2.1rem;
+    border-radius: 15px;
+    color: #222533;
+    font-size: 1.8rem;
+    background-color: #935f33;
 }
 
 .welcome-text a:hover {
@@ -210,6 +220,7 @@ html {
 .inner-welcome img {
     width: 80%;
 }
+
 
 /* why us section */
 
@@ -358,6 +369,8 @@ html {
     font-size: 1.5rem;
     color: #666;
     line-height: 2;
+
+    font-weight: 500;
 }
 
 .reviews .box-container .box .stars {
@@ -584,7 +597,7 @@ ul {
     -o-box-shadow: 0 0 10px #cccccc;
     box-shadow: 0 0 10px #cccccc;
     box-sizing: border-box;
-    color: #ff5a6e;
+    color: #935f33;
     display: inline-block;
     font-size: 20px;
     height: 50px;
@@ -601,12 +614,13 @@ ul {
     margin-bottom: 5px;
     text-transform: capitalize;
     font-size: 20px;
+    color: #222533;
 }
 
 .team-area .info span {
-    color: #ff5a6e;
+    color: #935f33;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 19px;
 }
