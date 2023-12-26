@@ -10,7 +10,19 @@
     $q=mysqli_query($connect,$projects);
     $rows = $q -> fetch_all(MYSQLI_ASSOC);
 
-    ?>
+    
+if (isset($_GET['delete_id'])) {
+  $id = $_GET['delete_id'];
+  $stmt = $connect->prepare("DELETE FROM projects WHERE id = $id");
+
+  if ($stmt->execute()) {
+    header("Location: current_projects.php"); 
+  } else {
+    echo "Error deleting row";
+  }
+}
+?>
+?>
 
 
 
@@ -103,7 +115,8 @@
                         <th>Title</th>
                         <th>architect</th>
                         <th>price_range</th>
-                        <th>Edit/ Delete</th>
+                        <th>Edit </th>
+                        <th> Delete</th>
                     </tr>
 
                 </thead>
@@ -114,10 +127,9 @@
                 echo"<td>".$row['title']."</td>";
                 echo"<td>".$row['architect']."</td>";
                 echo"<td>".$row['price_range']."</td>";
-                echo "<td>";
-                echo '<button name="btnedti" type="button" class="btn btn-success edit"><a href="Edit_project.php">Edit</a></button>'; 
-                echo '<button name="btndel" onclick="myFunction()" type="button" class="btn btn-danger">Delete</button>';
-                echo "</td>";
+                echo '<td><a href="Edit_project.php">Edit</a></td>'; 
+                echo "<td><a href='?delete_id=" . $row['id'] . "'>Delete</a></td>";
+        
 
                 echo"</tr>";
             }

@@ -14,7 +14,7 @@ $sql = "INSERT INTO projects (id,image, title, architect, description, price_ran
 VALUES ('$id','$image', '$title', '$architect', '$description', '$price')";
 
 if (mysqli_query($db, $sql)) {
-    echo "Project information submitted successfully!";
+    header("Location:current_projects.php");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
 }
