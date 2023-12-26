@@ -15,6 +15,6 @@ $sql = "INSERT INTO contacts (firstName, lastName, email ,projectName, details, 
 '$projectName', '$details', '$comment')";
 mysqli_query($db, $sql);
 
-header("Location: contact.html");
+header("Location: contact.php");
 }
 ?>
