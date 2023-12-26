@@ -106,6 +106,7 @@ nav a:hover, header h1:hover {
     color: #222533;
     font-size: 1.2rem;
     background-color: #935f33;
+    text-decoration: none;
 }
 
 .second-btn:hover {
@@ -125,8 +126,16 @@ h2 {
 h3 {
     text-align: center;
 }
-
-
+.PTitle{
+    font-size: 23px;
+    background-color: #935f33;
+}
+.price{
+    font-weight: bold;
+}
+.desc{
+    font-size: 17px;
+}
 .background-image {
     background: url(imgs/13.jpg);
     width: 100%;

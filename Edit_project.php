@@ -14,42 +14,42 @@
 
 <body>
 
-<!-- SIDEBAR -->
-<section id="sidebar">
-    <a href="#" class="brand">
-        <i class='bx bxs-smile'></i>
-        <span class="text">AdminHub</span>
-    </a>
-    <ul class="side-menu top">
-        <li>
-            <a href="current_projects.php">
-                <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">Current projects</span>
-            </a>
-        </li>
-        <li>
-            <a href="Add_project.php">
-                <i class='bx bx-plus'></i>
-                <span class="text">Add project</span>
-            </a>
-        </li>
-        <li class="active">
-            <a href="Edit_project.php">
-                <i class='bx bxs-edit-alt'></i>
-                <span class="text">Edit project</span>
-            </a>
-        </li>
-    </ul>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li>
+                <a href="current_projects.php">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Current projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="Add_project.php">
+                    <i class='bx bx-plus'></i>
+                    <span class="text">Add project</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="Edit_project.php">
+                    <i class='bx bxs-edit-alt'></i>
+                    <span class="text">Edit project</span>
+                </a>
+            </li>
+        </ul>
 
-    <ul class="side-menu">
-        <li>
-            <a href="#" class="logout">
-                <i class='bx bxs-log-out-circle'></i>
-                <span class="text">Logout</span>
-            </a>
-        </li>
-    </ul>
-</section>
+        <ul class="side-menu">
+            <li>
+                <a href="login-signup.html" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
     <!-- SIDEBAR -->
 
 
@@ -96,7 +96,7 @@
                 </div>
                 <div>
                     <label for="desc">Description</label>
-                    <textarea name="desc" id="desc" ></textarea>
+                    <textarea name="desc" id="desc"></textarea>
                 </div>
                 <div>
                     <label for="price">Price Range</label>
@@ -104,9 +104,10 @@
                 </div>
                 <button type="submit" id="edit">Edit</button>
             </form>
-            </div>
-            <script src="dash.js"></script>
+        </div>
+        <script src="dash.js"></script>
 
 
 </body>
+
 </html>

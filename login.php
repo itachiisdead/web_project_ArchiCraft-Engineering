@@ -9,7 +9,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 
   if ($_POST['email']=='hebaadelali78@gmail.com' &&$_POST['password']=='11112222')
   {
-    header("Location: dashboard.html");
+    header("Location: current_projects.php");
   }
 
 else{

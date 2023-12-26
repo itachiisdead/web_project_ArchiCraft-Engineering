@@ -32,43 +32,43 @@
 
 <body>
 
-<!-- SIDEBAR -->
-<section id="sidebar">
-    <a href="#" class="brand">
-        <i class='bx bxs-smile'></i>
-        <span class="text">AdminHub</span>
-    </a>
-    <ul class="side-menu top">
-        <li class="active">
-            <a href="current_projects.php">
-                <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="text">Current projects</span>
-            </a>
-        </li>
-        <li>
-            <a href="Add_project.php">
-                <i class='bx bx-plus'></i>
-                <span class="text">Add project</span>
-            </a>
-        </li>
-        <li>
-            <a href="Edit_project.php">
-                <i class='bx bxs-edit-alt'></i>
-                <span class="text">Edit project</span>
-            </a>
-        </li>
-    </ul>
-    <ul class="side-menu">
-        <li>
-            <a href="#" class="logout">
-                <i class='bx bxs-log-out-circle'></i>
-                <span class="text">Logout</span>
-            </a>
-        </li>
-    </ul>
-</section>
     <!-- SIDEBAR -->
- 
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="current_projects.php">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Current projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="Add_project.php">
+                    <i class='bx bx-plus'></i>
+                    <span class="text">Add project</span>
+                </a>
+            </li>
+            <li>
+                <a href="Edit_project.php">
+                    <i class='bx bxs-edit-alt'></i>
+                    <span class="text">Edit project</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="login-signup.html" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
 
 
     <!-- CONTENT -->
@@ -96,19 +96,19 @@
                     </ul>
                 </div>
             </div>
-<table class="table" id="table" >
-    <thead>
-        <tr>
-            <th >ID</th>
-            <th >Title</th>
-            <th >architect</th>
-            <th >price_range</th>
-            <th >Edit/ Delete</th>
-        </tr>
-      
-    </thead>
-    <tbody>
-    <?php
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>architect</th>
+                        <th>price_range</th>
+                        <th>Edit/ Delete</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <?php
                 foreach ($rows as $row){     
                 echo"<td>".$row['id']."</td>";
                 echo"<td>".$row['title']."</td>";
@@ -122,23 +122,22 @@
                 echo"</tr>";
             }
                     ?>
- 
-      
-    </tbody>
-</table>
+
+
+                </tbody>
+            </table>
 
             <script src="dash.js">
-
-function myFunction() {
-  fetch('delete.php')
-    .then(response => response.text())
-    .then(data => {
-      // Handle the response from the PHP script
-    });
-}
+            function myFunction() {
+                fetch('delete.php')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Handle the response from the PHP script
+                    });
+            }
             </script>
 
-            
+
 
 </body>
 
