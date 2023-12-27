@@ -85,12 +85,12 @@ nav a:hover, header h1:hover {
 
 .inner-back-text {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 40px;
-    color: #e0b064;
+    color: #fff7eb;
 
 }
 
