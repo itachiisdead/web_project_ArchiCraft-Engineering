@@ -58,10 +58,7 @@
 
     <div class="inner-back-text">
         <h1>All projects </h1>
-        <div class="inner-back-btn">
-            <a href="details.html" class="second-btn">explore our gallery</a>
-        </div>
-    </div>
+        
     </div>
 
 
