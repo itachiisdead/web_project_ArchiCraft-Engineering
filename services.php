@@ -12,38 +12,38 @@
 </head>
 
 <body>
-<div class="background-image">
-    <header>
-       
-        <div class="logo">
-            <img src="imgs/icon-1.png" alt="icon">
-            <h1>     ArchiCraft  </h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
+    <div class="background-image">
+        <header>
 
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="port.php">portfolio</a></li>
-                <li><a href="login-signup.html" class="user">
-                        <i class="fa-solid fa-user "></i>
-                    </a></li>
-            </ul>
-        </nav>
-        <i id="ham" class="fa-solid fa-bars hamburger"></i>
-    </header>
-</div>
+            <div class="logo">
+                <img src="imgs/icon-1.png" alt="icon">
+                <h1> ArchiCraft </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="services.php">Services</a></li>
 
-
-        <div class="inner-back-text">
-            <h1>OUR SERVICES </h1>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="port.php">portfolio</a></li>
+                    <li><a href="login-signup.php" class="user">
+                            <i class="fa-solid fa-user "></i>
+                        </a></li>
+                </ul>
+            </nav>
+            <i id="ham" class="fa-solid fa-bars hamburger"></i>
+        </header>
+    </div>
 
 
+    <div class="inner-back-text">
+        <h1>OUR SERVICES </h1>
 
 
-        </div>
+
+
+    </div>
     </div>
     <section class="services">
         <div>
@@ -87,7 +87,7 @@
                         <li><a href="#">House Planning</a></li>
                         <li><a href="#">Interior Design</a></li>
                         <li><a href="#">Sustainability Solutions
-                        </a></li>
+                            </a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -104,7 +104,7 @@
         </div>
     </div>
     <!-- Footer End -->
-    
+
     <script src="main.js"></script>
 </body>
 
