@@ -23,7 +23,7 @@ else{
     // Login successful
     session_start();
     $_SESSION['email'] = $email;
-    header("Location: index.html"); // Redirect to home page
+    header("Location: index.php"); // Redirect to home page
     echo "Login successful";
   } else {
     // Login failed

@@ -113,9 +113,7 @@ img {
         position: relative;
         margin: auto;
     }
-  #mySlides {
-    display: none;
-  }
+
 
   .cursor {
     cursor: pointer;
@@ -172,6 +170,44 @@ img {
   .demo:hover {
     opacity: 1;
   }
+
+  .services {
+    margin: 20px 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services > div {
+    margin: 10px auto;
+    margin:10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.services h4{
+    text-align: center;
+}
+
+.services section:hover {
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
 
 .project-details {
     display: flex;
