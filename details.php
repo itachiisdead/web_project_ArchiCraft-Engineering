@@ -6,7 +6,7 @@
         $db="db";
        $connect= mysqli_connect($host,$user,$pass,$db); 
 
-    $projects= "select * from projects ";
+    $projects= "select * from gallery ";
     $q=mysqli_query($connect,$projects);
     $rows = $q -> fetch_all(MYSQLI_ASSOC);
 
@@ -61,7 +61,7 @@
       foreach ($rows as $row){
           echo " <div class='mySlides' >
           <div class='numbertext'></div>
-        <img src='".$row['image']."' style='width:100%'>
+        <img src='".$row['img1']."' style='width:100%'>
     </div>
         ";
       }
@@ -81,7 +81,7 @@
     <?php
       foreach ($rows as $row){
           echo " <div class='column' >
-          <img class='demo cursor' src='".$row['image']."' style='width:100%' onclick='currentSlide(1)' alt=''>
+          <img class='demo cursor' src='".$row['img2']."' style='width:100%' onclick='currentSlide(1)' alt=''>
     </div>
         ";
       }
