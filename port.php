@@ -11,8 +11,19 @@
     $rows = $q -> fetch_all(MYSQLI_ASSOC);
 
 
+if (isset($_GET['search'])) {
+    $search = mysqli_real_escape_string($connect, $_GET['search']);
+  
+  
+    $sql = "SELECT * FROM projects WHERE category LIKE '%$search%'";
+    $result = mysqli_query($connect, $sql);
+  
+
+    $results = mysqli_fetch_all($result, MYSQLI_ASSOC);
+  }
     
     ?>
+
 
 
 <!DOCTYPE html>
@@ -33,11 +44,19 @@
 
     <div class="background-image">
         <header>
-
             <div class="logo">
                 <img src="imgs/icon-1.png" alt="icon">
                 <h1> ArchiCraft </h1>
             </div>
+            
+
+<!--search-->
+  <form action="" method="get">
+   <input type="text" name="search" placeholder="Search by category">
+    <button type="submit">Search</button>
+
+
+  </form>
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -65,21 +84,39 @@
     <section class="services">
         <div class="box-container">
         <?php
-    foreach ($rows as $row) {
-        echo "<div>
-                <section>
-                    <a href='ds.php?id=" . $row['id'] . "'>
-                        <img src='" . $row['image'] . "' alt=''>
-                    </a>
-                </section>
-                <section>
-                    <h3 class='PTitle'>" . $row['title'] . "</h3><br>
-                    <h3 >"."Category: " . $row['category'] . "</h3>
 
-                </section>
-              </div>";
-    }
-    ?>
+if (isset($results)) {
+  // for search results
+  foreach ($results as $row) {
+    echo "<div>
+      <section>
+        <a href='ds.php?id=" . $row['id'] . "'>
+          <img src='" . $row['image'] . "' alt=''>
+        </a>
+      </section>
+      <section>
+        <h3 class='PTitle'>" . $row['title'] . "</h3><br>
+        <h3>Category: " . $row['category'] . "</h3>
+      </section>
+    </div>";
+  }
+} else {
+  // if no search was performed
+  foreach ($rows as $row) {
+    echo "<div>
+      <section>
+        <a href='ds.php?id=" . $row['id'] . "'>
+          <img src='" . $row['image'] . "' alt=''>
+        </a>
+      </section>
+      <section>
+        <h3 class='PTitle'>" . $row['title'] . "</h3><br>
+        <h3>Category: " . $row['category'] . "</h3>
+      </section>
+    </div>";
+  }
+}
+?>
 
         </div>
 
