@@ -9,7 +9,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 $password = trim($password);
 
 // Check password length and emptiness
-if (strlen($password) >= 8 && !empty($password)) {
+if (strlen($password) >= 6 && !empty($password)) {
 
   // Insert user into database
   $sql = "INSERT INTO register (name,email, password) VALUES ('$name','$email', '$password')";
@@ -18,6 +18,7 @@ if (strlen($password) >= 8 && !empty($password)) {
   header("Location: login-signup.php");
 }
 else{
+  echo "Password is too short or empty";
   header("Location: login-signup.php");
 }
 }
