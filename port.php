@@ -48,7 +48,7 @@ if (isset($_GET['search'])) {
                 <img src="imgs/icon-1.png" alt="icon">
                 <h1> ArchiCraft </h1>
             </div>
-            </form>
+            
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -68,9 +68,11 @@ if (isset($_GET['search'])) {
 
 
     <div class="inner-back-text">
-        <form action="" method="get" class="search">
+    <h1>ِAll projects</h1>
+    <form action="" method="get" class="search">
             <input type="text" name="search" placeholder="Search by category">
             <button type="submit">Search</button>
+            </form>
 
     </div>
 

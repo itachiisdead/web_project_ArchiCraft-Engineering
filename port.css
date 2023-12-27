@@ -85,12 +85,12 @@ nav a:hover, header h1:hover {
 
 .inner-back-text {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: 40px;
-    color: #fff5e6;
+    color: #e0b064;
 
 }
 
@@ -140,7 +140,7 @@ h3 {
 }
 
 .background-image {
-    background: url(imgs/13.jpg);
+    background: url(imgs/36.jpeg);
     width: 100%;
     height: 100vh;
     background-size: cover;
