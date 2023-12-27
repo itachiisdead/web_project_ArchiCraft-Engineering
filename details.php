@@ -1,3 +1,20 @@
+<?PHP
+    session_start();
+    $host="localhost";
+        $user="root";
+        $pass="";
+        $db="db";
+       $connect= mysqli_connect($host,$user,$pass,$db); 
+
+    $projects= "select * from projects ";
+    $q=mysqli_query($connect,$projects);
+    $rows = $q -> fetch_all(MYSQLI_ASSOC);
+
+
+    
+    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,35 +57,17 @@
 
     <!-- Full-width images with number text -->
     <div>
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="imgs/s1.jpg" style="width:100%">
+    <?php
+      foreach ($rows as $row){
+          echo " <div class='mySlides' >
+          <div class='numbertext'></div>
+        <img src='".$row['image']."' style='width:100%'>
     </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="imgs/s2.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="imgs/s3.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="imgs/s4.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="imgs/s5.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="imgs/s6.jpg" style="width:100%">
-    </div>
+        ";
+      }
+      
+      ?>
+    
  </div>
     <!-- Next and previous buttons -->
     <div class="arrows">
@@ -79,25 +78,17 @@
   
     <!-- Thumbnail images -->
     <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="imgs/5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="imgs/10.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="imgs/11.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="imgs/14.jpeg" style="width:100%" onclick="currentSlide(4)" alt="">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="imgs/16.jpeg" style="width:100%" onclick="currentSlide(5)" alt="">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="imgs/1.jpeg" style="width:100%" onclick="currentSlide(6)" alt="">
-      </div>
+    <?php
+      foreach ($rows as $row){
+          echo " <div class='column' >
+          <img class='demo cursor' src='".$row['image']."' style='width:100%' onclick='currentSlide(1)' alt=''>
     </div>
+        ";
+      }
+      
+      ?>
+    
+   
   </div>
    <!-- Project Details -->
    <div class="project-details">
