@@ -91,8 +91,9 @@ function saveTestimonial($name, $content, $rating, $image_path)
 <body>
 
     <div class="container">
-        <h1>Write a Testimonial</h1>
-        <form id="testimonialForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+        <h2>Write a Testimonial</h2>
+        <form id="testimonialForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"
+            enctype="multipart/form-data">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -105,7 +106,7 @@ function saveTestimonial($name, $content, $rating, $image_path)
             <label for="photo">Your Photo:</label>
             <input type="file" id="photo" name="photo" accept="image/*" required>
 
-            <button type="submit">Submit </button>
+            <a href="index.php"><button type="submit" class="button">Submit </button></a>
         </form>
     </div>
 

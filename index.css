@@ -164,6 +164,9 @@ html {
     letter-spacing: 3px;
 }
 
+.second-btn{
+    margin-left: 8px;
+}
 /* welcome section style */
 
 
@@ -298,10 +301,8 @@ html {
     margin-bottom: 2.5rem;
 }
 
-
-
 .reviews h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
 }
 
@@ -584,12 +585,22 @@ ul {
 .team-area .info .message a i {
     font-weight: 500;
 }
+
 .team-area .info h4 {
     font-weight: 600;
     margin-bottom: 5px;
     text-transform: capitalize;
     font-size: 20px;
     color: #222533;
+}
+
+.add-rev {
+    display: flex !important;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .team-area .info span {
@@ -761,6 +772,7 @@ ul {
     text-transform: capitalize;
     transition: .3s;
 }
+
 .mySlides {
     display: none;
     width: 100%;
@@ -843,4 +855,60 @@ ul {
     .text {
         font-size: 11px
     }
+}
+
+.btn {
+    --color: #b78d65;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 19px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+    color: var(--color2);
+}
+
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
 }

@@ -184,7 +184,11 @@
     <?php include 'reviews.php'; ?>
 
     <section class="reviews" id="reviews">
-        <h1 class="title">TESTIMONIALS</h1>
+        <div class="add-rev">
+            <h1> TESTIMONIALS</h1>
+            <a href="feedback.php"><button class="btn">Add Review</button></a>
+        </div>
+
         <div class="box-container">
             <?php
             // Use the function to get reviews
