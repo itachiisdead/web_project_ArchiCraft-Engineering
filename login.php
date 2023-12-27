@@ -7,7 +7,7 @@ if (isset($_POST['email'], $_POST['password'])) {
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password = mysqli_real_escape_string($db, $_POST['password']);
 
-  if ($_POST['email']=='hebaadelali78@gmail.com' &&$_POST['password']=='11112222')
+  if ($_POST['email']=='admin@gmail.com' &&$_POST['password']=='admin')
   {
     header("Location: current_projects.php");
   }
