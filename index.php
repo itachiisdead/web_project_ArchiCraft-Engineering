@@ -181,109 +181,29 @@
 
 
     <!-- reviews  -->
+    <?php include 'reviews.php'; ?>
+
     <section class="reviews" id="reviews">
-
         <h1 class="title">TESTIMONIALS</h1>
-
         <div class="box-container">
+            <?php
+            // Use the function to get reviews
+            $reviews = getReviews();
 
-            <div class="box">
-                <img src="imgs\pic-1.jpeg" alt="">
-                <p>I am writing this testimonial to express my utmost satisfaction with the services provided by
-                    ArchiCraft Engineering Company. The level of professionalism, expertise, and dedication demonstrated
-                    by the team at ArchiCraft Engineering has truly exceeded my expectations.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Alex Reynolds </h3>
+            // Display reviews
+            foreach ($reviews as $review) {
+                echo '
+        <div class="box">
+            <img src="' . $review["image_path"] . '" alt="">
+            <p>' . $review["content"] . '</p>
+            <div class="stars">
+                ' . generateStars($review["rating"]) . '
             </div>
-
-            <div class="box">
-                <img src="imgs\pic-2.png" alt="">
-                <p>The ArchiCraft team consistently delivered high-quality results, demonstrating a deep understanding
-                    of the intricate details involved in engineering projects. Their commitment to excellence and the
-                    ability to meet deadlines with precision have made them a reliable partner for our ventures.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Maya Anderson
-                </h3>
-            </div>
-
-            <div class="box">
-                <img src="imgs\pic-3.jpeg" alt="">
-                <p> i want to express my satisfaction with the outstanding services provided by ArchiCraft team
-                    .The team's professionalism, dedication, and innovative approach have made a lasting impression on
-                    me.
-                    I highly recommend ArchiCraft Engineering for any engineering endeavor.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Oliver Davis </h3>
-            </div>
-
-            <div class="box">
-                <img src="imgs/pic-4.png" alt="">
-                <p>As a client of ArchiCraft Engineering Company,
-                    I am thoroughly impressed by the level of dedication
-                    demonstrated by their team. The seamless collaboration and innovative
-                    solutions have played a pivotal role in the success of our project.
-                    I highly recommend ArchiCraft Engineering for their exceptional services.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>Sofia Martinez</h3>
-            </div>
-
-            <div class="box">
-                <img src="imgs/pic-5.jpeg" alt="">
-                <p> ArchiCraft Engineering consistently delivers high-quality results,
-                    showcasing a deep understanding of intricate engineering details.
-                    Their commitment to excellence and precision in meeting deadlines makes them a reliable partner
-                    for our ventures. It's this reliability sets them apart in the industry.
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>David Miller
-                </h3>
-            </div>
-
-            <div class="box">
-                <img src="imgs/pic-6.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque
-                    itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <h3>john deo</h3>
-            </div>
-
+            <h3>' . $review["name"] . '</h3>
+        </div>';
+            }
+            ?>
         </div>
-
     </section>
 
     <!-- our team -->
