@@ -584,7 +584,6 @@ ul {
 .team-area .info .message a i {
     font-weight: 500;
 }
-
 .team-area .info h4 {
     font-weight: 600;
     margin-bottom: 5px;
@@ -762,51 +761,10 @@ ul {
     text-transform: capitalize;
     transition: .3s;
 }
-
-/* Newsletter Form */
-.newsletter-form {
-    position: relative;
-    max-width: 300px;
-    margin-top: 15px;
-}
-
-.newsletter-form input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-size: 14px;
-}
-
-.newsletter-form button {
-    padding: 10px 20px;
-    background-color: #b77f42;
-    color: #ffffff;
-    border: none;
-    margin-top: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-    background-color: #935f33;
-}
-
-
-
-
-
 .mySlides {
     display: none;
     width: 100%;
-
 }
-
-
 
 /* Slideshow container */
 .slideshow-container {

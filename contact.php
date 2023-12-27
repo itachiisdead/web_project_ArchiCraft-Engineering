@@ -22,12 +22,12 @@
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="services.php">Services</a></li>
 
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="port.php">portfolio</a></li>
-                    <li><a href="login-signup.html" class="user">
+                    <li><a href="login-signup.php" class="user">
                             <i class="fa-solid fa-user "></i>
                         </a></li>
                 </ul>
@@ -48,7 +48,7 @@
         <section class="contact-img">
             <img src="imgs/contact-us.gif" alt="img" class="img">
         </section>
-        
+
         <section class="contact-form">
             <h2>Contact Us</h2>
             <form method="post" action="contact-form.php">
@@ -111,14 +111,6 @@
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
-                </div>
-                <div class="col">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for updates.</p>
-                    <div class="newsletter-form">
-                        <input type="text" placeholder="Your email">
-                        <button type="button">Subscribe</button>
-                    </div>
                 </div>
             </div>
         </div>
