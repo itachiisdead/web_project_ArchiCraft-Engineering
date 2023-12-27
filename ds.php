@@ -29,14 +29,13 @@ if (isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <<<<<<< HEAD <link rel="stylesheet" href="ds.css">
-        =======
-        <link rel="stylesheet" href="details.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        >>>>>>> 81f837f9661c50b150d1d32f36a559d5dc91828e
-        <title>Project Details</title>
+    <link rel="stylesheet" href="ds.css">
+
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Project Details</title>
 </head>
 
 
@@ -95,11 +94,7 @@ if (isset($_GET['id'])) {
             <p><?php echo $project['description']; ?></p>
             <p>Price Range: <?php echo $project['price_range']; ?></p>
             <h3>Architect: <?php echo $project['architect']; ?></h3>
-
-
         </div>
-
-
         <script src="main.js"></script>
 </body>
 
