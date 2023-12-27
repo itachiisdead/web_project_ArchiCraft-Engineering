@@ -26,9 +26,13 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="port.php">portfolio</a></li>
-                <li><a href="login-signup.php" class="user">
-                        <i class="fa-solid fa-user "></i>
-                    </a></li>
+                <?php
+                session_start();
+                if (isset($_SESSION['logged_in'])): ?>
+                <a href="logout.php" class="landl">Logout</a>
+                <?php else: ?>
+                <a href="login-signup.php" class="landl"><i class="fa-solid fa-user"></i></a>
+                <?php endif; ?>
             </ul>
         </nav>
         <i class="fa-solid fa-bars hamburger"></i>

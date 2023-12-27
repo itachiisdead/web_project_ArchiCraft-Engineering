@@ -45,9 +45,7 @@ header {
     line-height: 48px;
     font-weight: 600;
     text-align: start;
-
     color: #b78d65;
-
     font-family: "Teko", sans-serif;
 }
 
@@ -164,9 +162,10 @@ html {
     letter-spacing: 3px;
 }
 
-.second-btn{
+.second-btn {
     margin-left: 8px;
 }
+
 /* welcome section style */
 
 

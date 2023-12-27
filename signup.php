@@ -15,10 +15,10 @@ if (strlen($password) >= 8 && !empty($password)) {
   $sql = "INSERT INTO register (name,email, password) VALUES ('$name','$email', '$password')";
   mysqli_query($db, $sql);
 
-  header("Location: login-signup.html");
+  header("Location: login-signup.php");
 }
 else{
-  header("Location: login-signup.html");
+  header("Location: login-signup.php");
 }
 }
 ?>

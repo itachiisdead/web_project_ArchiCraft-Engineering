@@ -23,12 +23,14 @@ else{
     // Login successful
     session_start();
     $_SESSION['email'] = $email;
-    header("Location: index.html"); // Redirect to home page
+$_SESSION['logged_in'] = true;
+
+    header("Location: index.php"); // Redirect to home page
     echo "Login successful";
   } else {
     // Login failed
     echo "Invalid email or password.";
-    header("Location: login-signup.html"); // Redirect to login page
+    header("Location: login-signup.php"); // Redirect to login page
   }
 }
 }

@@ -48,7 +48,7 @@ if (isset($_GET['search'])) {
                 <img src="imgs/icon-1.png" alt="icon">
                 <h1> ArchiCraft </h1>
             </div>
-            
+
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
@@ -57,9 +57,12 @@ if (isset($_GET['search'])) {
 
                     <li><a href="contact.php">Contact</a></li>
                     <li><a href="port.php">portfolio</a></li>
-                    <li><a href="login-signup.php" class="user">
-                            <i class="fa-solid fa-user "></i>
-                        </a></li>
+                    <?php
+                if (isset($_SESSION['logged_in'])): ?>
+                    <a href="logout.php">Logout</a>
+                    <?php else: ?>
+                    <a href="login-signup.php"><i class="fa-solid fa-user"></i></a>
+                    <?php endif; ?>
                 </ul>
             </nav>
             <i id="ham" class="fa-solid fa-bars hamburger"></i>
@@ -68,11 +71,11 @@ if (isset($_GET['search'])) {
 
 
     <div class="inner-back-text">
-    <h1>ِAll projects</h1>
-    <form action="" method="get" class="search">
+        <h1>ِAll projects</h1>
+        <form action="" method="get" class="search">
             <input type="text" name="search" placeholder="Search by category">
             <button type="submit">Search</button>
-            </form>
+        </form>
 
     </div>
 
