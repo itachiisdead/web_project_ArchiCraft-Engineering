@@ -64,23 +64,20 @@
 
     <section class="services">
         <div class="box-container">
-            <?php
-                    foreach ($rows as $row){
-                        echo " <div >
-                      <section>
-                        <img src='".$row['image']."' alt=''>
-                       
-                      </section>
-                      <section>
-                        <h3 class='PTitle'>".$row['title']."</h3>
-                        <div class='price'>"." Price range : ".$row['price_range']."</div>
-                        <div class='desc'>".$row['description']."</div>
-
-                      </section>
-                    </div> ";
-                    }
-                    
-                    ?>
+        <?php
+    foreach ($rows as $row) {
+        echo "<div>
+                <section>
+                    <a href='ds.php?id=" . $row['id'] . "'>
+                        <img src='" . $row['image'] . "' alt=''>
+                    </a>
+                </section>
+                <section>
+                    <h3 class='PTitle'>" . $row['title'] . "</h3>
+                </section>
+              </div>";
+    }
+    ?>
 
         </div>
 
