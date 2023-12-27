@@ -287,126 +287,52 @@
     </section>
 
     <!-- our team -->
+    <?php include 'team.php'; ?>
 
     <section id="team" class="team-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="site-heading text-center">
-                        <h2>TEAM MEMBERS </h2>
-                        <h4>We Are Creative Archicraft Team For Your Dream Desgin</h4>
+                        <h2>TEAM MEMBERS</h2>
+                        <h4>We Are Creative Archicraft Team For Your Dream Design</h4>
                     </div>
                 </div>
             </div>
             <div class="row team-items">
-                <div class="col-md-4 single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="imgs/IMG_20230824_132128.jpg" alt="Thumb">
-                            <div class="overlay">
-                                <h4>Nourhan Ayman </h4>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                </p>
-                                <div class="social">
-                                    <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="vimeo">
-                                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                        </li>
-                                    </ul>
+                <?php
+                // Use the function to get team members
+                $teamMembers = getTeamMembers();
+
+                // Display team members
+                foreach ($teamMembers as $row) {
+                    echo '
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="' . $row["image_path"] . '" alt="' . $row["name"] . '">
+                                <div class="overlay">
+                                    <h4>' . $row["name"] . '</h4>
+                                    <p>' . $row["description"] . '</p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                            <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li class="vimeo"><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
-                            </span>
-                            <h4>Nourhan Ayman</h4>
-                            <span>Project Manager</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="imgs/hm.jpg" alt="Thumb">
-                            <div class="overlay">
-                                <h4>Heba Maher</h4>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                </p>
-                                <div class="social">
-                                    <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="vimeo">
-                                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="info">
+                                <span class="message"><a href="#"><i class="fas fa-envelope-open"></i></a></span>
+                                <h4>' . $row["name"] . '</h4>
+                                <span>' . $row["role"] . '</span>
                             </div>
                         </div>
-                        <div class="info">
-                            <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
-                            </span>
-                            <h4>Heba Maher</h4>
-                            <span> Admin</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 single-item">
-                    <div class="item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="imgs/pic-6.jpg" alt="Thumb">
-                            <div class="overlay">
-                                <h4> Heba Adel</h4>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                </p>
-                                <div class="social">
-                                    <ul>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="pinterest">
-                                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="vimeo">
-                                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <span class="message">
-                                <a href="#"><i class="fas fa-envelope-open"></i></a>
-                            </span>
-                            <h4>Heba Adel</h4>
-                            <span>Web designer</span>
-                        </div>
-                    </div>
-                </div>
+                    </div>';
+                }
+                ?>
             </div>
         </div>
     </section>
