@@ -9,11 +9,7 @@
     $projects= "select * from projects ";
     $q=mysqli_query($connect,$projects);
     $rows = $q -> fetch_all(MYSQLI_ASSOC);
-
-
-    
     ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,15 +54,15 @@
 
     <div class="inner-back-text">
         <h1>All projects </h1>
-        
+
     </div>
 
 
     <section class="services">
-        <div class="box-container">
+
         <?php
     foreach ($rows as $row) {
-        echo "<div>
+        echo "<div >
                 <section>
                     <a href='ds.php?id=" . $row['id'] . "'>
                         <img src='" . $row['image'] . "' alt=''>
@@ -78,8 +74,6 @@
               </div>";
     }
     ?>
-
-        </div>
 
 
     </section>

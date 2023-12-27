@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 $host = "localhost";
@@ -30,19 +29,25 @@ if (isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="ds.css">
     <title>Project Details</title>
 </head>
 
 <body>
-    <h1>Project Details</h1>
-    <div>
-        <img src='<?php echo $project['image']; ?>' alt=''>
-        <h2><?php echo $project['title']; ?></h2>
-        <p><?php echo $project['description']; ?></p>
-        <p>Architect: <?php echo $project['architect']; ?></p>
-        <p>Price Range: <?php echo $project['price_range']; ?></p>
-    </div>
+    <main>
+        <h1 class="btn">Project Details</h1>
+        <div>
+            <img src='<?php echo $project['image']; ?>' alt=''>
+            <section>
+                <h2><?php echo $project['title']; ?></h2>
+                <p class="desc"><?php echo $project['description']; ?></p>
+                <p>Architect:</p>
+                <p class="A-name"> <?php echo $project['architect']; ?></p>
+                <p>Price Range:</p>
+                <p class="A-name"><?php echo $project['price_range']; ?></p>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>

@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2023 at 12:44 AM
--- Server version: 10.4.32-MariaDB
+-- Generation Time: 27 ديسمبر 2023 الساعة 18:58
+-- إصدار الخادم: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contacts`
+-- بنية الجدول `contacts`
 --
 
 CREATE TABLE `contacts` (
@@ -39,18 +39,19 @@ CREATE TABLE `contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `contacts`
+-- إرجاع أو استيراد بيانات الجدول `contacts`
 --
 
 INSERT INTO `contacts` (`id`, `firstName`, `lastName`, `email`, `projectName`, `details`, `comment`, `reg_date`) VALUES
 (1, 'Heba', 'Adel', 'hebaadelali78@gmail.com', 'ujh', '55', '66', '2023-12-24 15:32:40'),
 (2, 'mai', 'Adel', 'hebaadelali78@gmail.com', 'lalaland', 'hellooo', 'woooo', '2023-12-24 15:33:42'),
-(3, 'heba', 'maher', 'heba@gmail.com', 'country house', 'house in the countryside', '300 sq feet', '2023-12-25 19:02:21');
+(3, 'heba', 'maher', 'heba@gmail.com', 'country house', 'house in the countryside', '300 sq feet', '2023-12-25 19:02:21'),
+(7, 'nour', 'ayman', 'nourayman644@gmail.com', '12', '0', '0', '2023-12-26 23:08:23');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `projects`
+-- بنية الجدول `projects`
 --
 
 CREATE TABLE `projects` (
@@ -63,7 +64,7 @@ CREATE TABLE `projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `projects`
+-- إرجاع أو استيراد بيانات الجدول `projects`
 --
 
 INSERT INTO `projects` (`id`, `image`, `title`, `architect`, `description`, `price_range`) VALUES
@@ -76,12 +77,12 @@ INSERT INTO `projects` (`id`, `image`, `title`, `architect`, `description`, `pri
 (7, 'imgs/s1.jpg', 'LATM RESIDENCE', 'Helena Lucas Vieira', 'LATM residence is a contemporary farmhouse located in a respected equestrian estate on the outskirts of Johannesburg.   The form-giving was based on two axis, with the datum creating the entrance that established a protective north-facing courtyard, serving as primary entertainment space.\r\n\r\nThe service spaces were lined up on the west of the site, shielding the building from the harsh western sun, whilst the rest of the building opens and dissolves towards the north.  Honesty of materiality and structure were kept as the base rule throughout the project, leaving all major structural elements and materials exposed and kept to their natural state.', '3500$-5000$'),
 (9, 'imgs/s6.jpg', 'STACKS MOUNTAIN HOUSE', 'Lora Teagarden', 'Our first Irish project is located in the county of Kerry which overlooks the Stacks Mountain range and unveils a contemporary response to the traditional cottage typology found in this region.\r\n\r\nThis project rises from the ground with a strong but elegant off-shutter concrete assembly that serves as a permeable base, anchoring the design to its site. The first storey structure with its pitched roofs are entirely clad in bronze aluminium, and features openings and perforations cut-in as required throughout, to enhance the light quality on the inside.\r\n\r\nThis project is a good example of a humble-sized house with a big personality.', '4500$-6000$'),
 (10, 'imgs/20.jpg', 'FORREST ROAD HOUSE', 'James Garrett Jr.', 'The light-filled unique eco-friendly home designed by Nico van der Meulen Architects is situated in Inanda, with views of the Sandton skyline to the north.\r\n\r\nThe stand is 1511 sq.m. and the house faces 15° east of north.\r\n\r\nApproaching the home, the first view is of the cantilevered porte cochere screen of floating steel tubes with double sliding garage doors clad in dark limestone to blend with the wall.\r\nAlthough the spa, pool and water feature are three separate bodies of water, the effect created was that it is one interconnected system flowing into each other.', '4500$-6000$'),
-(11, 'imgs/s3.jpg', 'HOUSE MOT', 'Sanne van der Burgh', 'Residence Mot is designed to be a compact, contemporary family home in the coalfield town of Secunda, Mpumalanga.  The open plan design of the living space spills out onto the exterior terraces allowing for a seamless transition.  The swimming pool area becomes a sanctuary and key feature of the covered patio, with an integrated boma and fire pit ideal for entertaining.\r\n\r\nExposed cantilevered concrete fins form a strong architectural narrative on the first storey screening harsh solar exposure of the west.  Balcony planters are introduced to soften the brutality of the concrete, whilst aluminium screens add necessary privacy to bathroom areas.', '4500$-6000$');
+(11, 'imgs/s3.jpg', 'HOUSE ', 'Sanne van der Burgh', 'Residence Mot is designed to be a compact, contemporary family home in the coalfield town of Secunda, Mpumalanga.  The open plan design of the living space spills out onto the exterior terraces allowing for a seamless transition.  The swimming pool area becomes a sanctuary and key feature of the covered patio, with an integrated boma and fire pit ideal for entertaining.\r\n\r\nExposed cantilevered concrete fins form a strong architectural narrative on the first storey screening harsh solar exposure of the west.  Balcony planters are introduced to soften the brutality of the concrete, whilst aluminium screens add necessary privacy to bathroom areas.', '4500$-6000$');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `register`
+-- بنية الجدول `register`
 --
 
 CREATE TABLE `register` (
@@ -91,7 +92,7 @@ CREATE TABLE `register` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `register`
+-- إرجاع أو استيراد بيانات الجدول `register`
 --
 
 INSERT INTO `register` (`Name`, `email`, `password`) VALUES
@@ -99,6 +100,29 @@ INSERT INTO `register` (`Name`, `email`, `password`) VALUES
 ('heba', 'heba@gmail.com', '123'),
 ('heba', 'heba@gmail.com', '1233'),
 ('heba', 'hebaabdelali78@gmail.com', '1234567');
+
+-- --------------------------------------------------------
+
+--
+-- بنية الجدول `team_members`
+--
+
+CREATE TABLE `team_members` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `role` varchar(255) NOT NULL,
+  `image_path` varchar(255) DEFAULT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- إرجاع أو استيراد بيانات الجدول `team_members`
+--
+
+INSERT INTO `team_members` (`id`, `name`, `role`, `image_path`, `description`) VALUES
+(1, 'nour ayman', 'project manager', 'imgs/nour_ayman.jpg', 'nour ayman'),
+(2, 'heba maher', 'Admin', 'imgs/hm.jpg', 'heba maher'),
+(3, 'Heba Adel', 'Web Developer', 'imgs/b.png', 'heba adel');
 
 --
 -- Indexes for dumped tables
@@ -123,6 +147,12 @@ ALTER TABLE `register`
   ADD UNIQUE KEY `password` (`password`);
 
 --
+-- Indexes for table `team_members`
+--
+ALTER TABLE `team_members`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -130,7 +160,13 @@ ALTER TABLE `register`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `team_members`
+--
+ALTER TABLE `team_members`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

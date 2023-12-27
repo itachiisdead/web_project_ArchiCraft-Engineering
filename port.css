@@ -28,27 +28,31 @@ header {
     z-index: 3;
     top: 0%;
 }
-.logo{
+
+.logo {
     display: flex;
-    
+
 }
-.logo img{
+
+.logo img {
     width: 50px;
     height: 50px;
     margin-right: 12px;
     margin-left: 24px;
     vertical-align: middle;
 }
-.logo h1{
+
+.logo h1 {
     font-size: 26px;
-    line-height:48px;
+    line-height: 48px;
     font-weight: 600;
     text-align: start;
 
     color: #b78d65;
 
-    font-family: "Teko",sans-serif;
+    font-family: "Teko", sans-serif;
 }
+
 header nav {
     width: 50%;
 }
@@ -126,16 +130,12 @@ h2 {
 h3 {
     text-align: center;
 }
-.PTitle{
+
+.PTitle {
     font-size: 23px;
     background-color: #935f33;
 }
-.price{
-    font-weight: bold;
-}
-.desc{
-    font-size: 17px;
-}
+
 .background-image {
     background: url(imgs/13.jpg);
     width: 100%;
@@ -149,31 +149,23 @@ h3 {
 .services {
     margin: 20px 10px;
     display: flex;
-    flex-direction: column;
     gap: 10px;
-    width: 98%;
-}
-
-.services div {
-    margin: 10px auto;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    gap: 60px;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
-.services section {
-    width: 500px;
-    text-align: center;
+.services > div {
+    margin: 10px auto;
+    margin:10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.services section {
-    width: 500px;
-    text-align: center;
-}
-
-
 
 .services section:hover {
     transform: translateY(-4px);
@@ -195,8 +187,9 @@ h3 {
 }
 
 img {
-    width: 550px;
+    width: 100%;
     height: 350px;
+    margin: 5px auto;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -267,26 +260,28 @@ img {
     color: #ffffff;
     padding: 40px 0;
 }
-.footer .container .row{
+
+.footer .container .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     margin: 30px 0;
-    
+
 
 
 }
+
 .footer h3 {
-  color: rgb(248, 248, 248);
+    color: rgb(248, 248, 248);
     font-size: 26px;
     margin-bottom: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.footer p{
+.footer p {
     color: #b7b7b7;
     font-size: 20px;
     font-weight: 400;
@@ -294,11 +289,12 @@ img {
     margin-bottom: 20px;
     margin-right: 2px;
 }
-.footer p i{
 
-color: #b78d65;
-font-size: 20px;
-margin-left: 5px;
+.footer p i {
+
+    color: #b78d65;
+    font-size: 20px;
+    margin-left: 5px;
 
 }
 
@@ -364,4 +360,3 @@ margin-left: 5px;
 .newsletter-form button:hover {
     background-color: #935f33;
 }
-
