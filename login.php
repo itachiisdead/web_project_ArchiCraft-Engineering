@@ -28,7 +28,7 @@ else{
   } else {
     // Login failed
     echo "Invalid email or password.";
-    header("Location: login-signup.html"); // Redirect to login page
+    header("Location: login-signup.php"); // Redirect to login page
   }
 }
 }
