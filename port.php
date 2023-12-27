@@ -73,7 +73,9 @@
                     </a>
                 </section>
                 <section>
-                    <h3 class='PTitle'>" . $row['title'] . "</h3>
+                    <h3 class='PTitle'>" . $row['title'] . "</h3><br>
+                    <h3 >"."Category: " . $row['category'] . "</h3>
+
                 </section>
               </div>";
     }
