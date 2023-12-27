@@ -22,7 +22,6 @@ if (isset($_GET['delete_id'])) {
   }
 }
 ?>
-?>
 
 
 
@@ -123,11 +122,13 @@ if (isset($_GET['delete_id'])) {
                 <tbody>
                     <?php
                 foreach ($rows as $row){     
+                    echo"<tr>";
+            
                 echo"<td>".$row['id']."</td>";
                 echo"<td>".$row['title']."</td>";
                 echo"<td>".$row['architect']."</td>";
                 echo"<td>".$row['price_range']."</td>";
-                echo '<td><a href="Edit_project.php">Edit</a></td>'; 
+                echo '<td><a href="Edit_project.php?edit_id=' . $row['id'] . '">Edit</a></td>';
                 echo "<td><a href='?delete_id=" . $row['id'] . "'>Delete</a></td>";
         
 
