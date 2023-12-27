@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(97, 96, 95, 0.3);
+    background-color: rgba(2, 2, 2, 0.3);
     padding: 10px;
     color: #b77f42;
     position: fixed;
@@ -113,7 +113,7 @@ img {
         position: relative;
         margin: auto;
     }
-  .mySlides {
+  #mySlides {
     display: none;
   }
 
@@ -213,9 +213,7 @@ img {
  text-align: center;
  font-size: 25px;
 }
-.project-details h2{
 
-}
 #ham {
     font-size: 20px;
     cursor: pointer;

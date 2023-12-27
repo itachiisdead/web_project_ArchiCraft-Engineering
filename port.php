@@ -9,7 +9,22 @@
     $projects= "select * from projects ";
     $q=mysqli_query($connect,$projects);
     $rows = $q -> fetch_all(MYSQLI_ASSOC);
-    ?>
+
+
+if (isset($_GET['search'])) {
+$search = mysqli_real_escape_string($connect, $_GET['search']);
+
+
+$sql = "SELECT * FROM projects WHERE category LIKE '%$search%'";
+$result = mysqli_query($connect, $sql);
+
+
+$results = mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,14 +44,22 @@
 
     <div class="background-image">
         <header>
-
             <div class="logo">
                 <img src="imgs/icon-1.png" alt="icon">
                 <h1> ArchiCraft </h1>
             </div>
+
+
+            <!--search-->
+            <form action="" method="get">
+                <input type="text" name="search" placeholder="Search by category">
+                <button type="submit">Search</button>
+
+
+            </form>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
 

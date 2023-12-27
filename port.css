@@ -53,6 +53,27 @@ header {
     font-family: "Teko", sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+
+/* Basic styling for the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: left;
+  }
+
+
+
+
+
+
+
+>>>>>>> 81f837f9661c50b150d1d32f36a559d5dc91828e
 header nav {
     width: 50%;
 }

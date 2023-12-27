@@ -10,8 +10,12 @@ menuBar.addEventListener('click', function () {
 
 let id = document.getElementById('id');
 let img_src = document.getElementById('file');
+let img_src2 = document.getElementById('file2');
+let img_src3 = document.getElementById('file3');
+let img_src4 = document.getElementById('file4');
 let title= document.getElementById('title');
 let architect = document.getElementById('architect');
+let category = document.getElementById('category');
 let description = document.getElementById('description'); 
 let price = document.getElementById('price');
 let add= document.getElementById('add');
@@ -32,7 +36,11 @@ function readFormData() {
   formData["id"] = document.getElementById("id").value;
   formData["title"] = document.getElementById("title").value;
   formData["file"] = document.getElementById("file").value;
+  formData["file2"] = document.getElementById("file2").value;
+  formData["file3"] = document.getElementById("file3").value;
+  formData["file4"] = document.getElementById("file4").value;
   formData["architect"] = document.getElementById("architect").value;
+  formData["category"] = document.getElementById("category").value;
   formData["description"] = document.getElementById("description").value;
   formData["price"] = document.getElementById("price").value;
   return formData;
@@ -60,7 +68,11 @@ function resetForm() {
   document.getElementById("id").value = "";
   document.getElementById("title").value = "";
   document.getElementById("file").value = "";
+  document.getElementById("file2").value = "";
+  document.getElementById("file3").value = "";
+  document.getElementById("file4").value = "";
   document.getElementById("architect").value = "";
+  document.getElementById("category").value = "";
   document.getElementById("description").value = "";
   document.getElementById("price").value = "";
 
@@ -72,7 +84,11 @@ function onEdit(td) {
   document.getElementById("id").value = selectedRow.cells[0].innerHTML;
   document.getElementById("title").value = selectedRow.cells[1].innerHTML;
   document.getElementById("file").value = selectedRow.cells[2].innerHTML;
-  document.getElementById("architect").value = selectedRow.cells[3].innerHTML;    
+  document.getElementById("file2").value = selectedRow.cells[2].innerHTML;
+  document.getElementById("file3").value = selectedRow.cells[2].innerHTML;
+  document.getElementById("file4").value = selectedRow.cells[2].innerHTML;
+  document.getElementById("architect").value = selectedRow.cells[3].innerHTML;   
+  document.getElementById("category").value = selectedRow.cells[3].innerHTML;    
   document.getElementById("description").value = selectedRow.cells[4].innerHTML;
   document.getElementById("price").value = selectedRow.cells[5].innerHTML;
 

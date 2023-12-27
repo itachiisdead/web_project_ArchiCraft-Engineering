@@ -113,6 +113,7 @@ if (isset($_GET['delete_id'])) {
                         <th>ID</th>
                         <th>Title</th>
                         <th>architect</th>
+                        <th>category</th>
                         <th>price_range</th>
                         <th>Edit </th>
                         <th> Delete</th>
@@ -127,6 +128,7 @@ if (isset($_GET['delete_id'])) {
                 echo"<td>".$row['id']."</td>";
                 echo"<td>".$row['title']."</td>";
                 echo"<td>".$row['architect']."</td>";
+                echo"<td>".$row['category']."</td>";
                 echo"<td>".$row['price_range']."</td>";
                 echo '<td><a href="Edit_project.php?edit_id=' . $row['id'] . '">Edit</a></td>';
                 echo "<td><a href='?delete_id=" . $row['id'] . "'>Delete</a></td>";

@@ -6,7 +6,7 @@
         $db="db";
        $connect= mysqli_connect($host,$user,$pass,$db); 
 
-    $projects= "select * from gallery ";
+    $projects= "select * from projects ";
     $q=mysqli_query($connect,$projects);
     $rows = $q -> fetch_all(MYSQLI_ASSOC);
 
@@ -37,7 +37,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
 
@@ -53,20 +53,17 @@
 
 <!-- Container for the image gallery -->
 <div class="gallery">
-
-    <!-- Full-width images with number text -->
     <div>
     <?php
       foreach ($rows as $row){
           echo " <div class='mySlides' >
           <div class='numbertext'></div>
-        <img src='".$row['img1']."' style='width:100%'>
+        <img src='".$row['image']."' style='width:100%'>
     </div>
         ";
       }
       
       ?>
-    
  </div>
     <!-- Next and previous buttons -->
     <div class="arrows">
@@ -80,7 +77,7 @@
     <?php
       foreach ($rows as $row){
           echo " <div class='column' >
-          <img class='demo cursor' src='".$row['img2']."' style='width:100%' onclick='currentSlide(1)' alt=''>
+          <img class='demo cursor' src='".$row['image']."' style='width:100%' onclick='currentSlide(1)' alt=''>
     </div>
         ";
       }
@@ -106,6 +103,9 @@
     <h2>Architect: James Garrett Jr.</h2>
     <!-- Add more project details as needed -->
 </div>
+
+
+
 
     <!-- Footer Start -->
 
@@ -156,3 +156,4 @@
 </body>
 
 </html>
+

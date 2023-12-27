@@ -91,12 +91,28 @@
                         <input type="file" id="file" name="img-src">
                     </div>
                     <div>
+                        <label for="file2">Image</label>
+                        <input type="file" id="file2" name="img-src2">
+                    </div>
+                    <div>
+                        <label for="file3">Image</label>
+                        <input type="file" id="file3" name="img-src3">
+                    </div>
+                    <div>
+                        <label for="file4">Image</label>
+                        <input type="file" id="file4" name="img-src4">
+                    </div>
+                    <div>
                         <label for="title">Title</label>
                         <input type="text" placeholder="project title" name="title" id="title">
                     </div>
                     <div>
                         <label for="architect">Architect</label>
                         <input type="text" placeholder="architect" name="architect" id="architect">
+                    </div>
+                    <div>
+                        <label for="category">Category</label>
+                        <input type="text" placeholder="category" name="category" id="category">
                     </div>
                     <div>
                         <label for="description">Description</label>
