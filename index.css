@@ -911,3 +911,10 @@ ul {
     filter: brightness(.7);
     transform: scale(.98);
 }
+.box{
+    height:500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
