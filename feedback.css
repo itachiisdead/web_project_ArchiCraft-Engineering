@@ -6,14 +6,16 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: url(imgs/fed2.png) no-repeat   ;
+    background-size:cover;
 }
+
 
 .container {
     margin: 10px;
