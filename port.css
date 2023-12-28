@@ -77,7 +77,8 @@ nav ul li a {
     color: #b77f42;
 }
 
-nav a:hover, header h1:hover {
+nav a:hover,
+header h1:hover {
     color: black;
     cursor: pointer;
 
@@ -158,9 +159,9 @@ h3 {
     align-items: center;
 }
 
-.services > div {
+.services>div {
     margin: 10px auto;
-    margin:10px;
+    margin: 10px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -170,7 +171,8 @@ h3 {
     align-items: center;
     text-align: center;
 }
-.services h4{
+
+.services h4 {
     text-align: center;
 }
 
@@ -203,7 +205,244 @@ img {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.search input{
+
+
+
+/* h1 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+  } */
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-block-size: 2px;
+}
+
+.services .container img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    object-fit: cover
+}
+
+.col {
+    /* width: calc(35% - 2rem); */
+    margin: 1rem;
+    cursor: pointer;
+    width: 500px;
+    margin: 1%;
+
+}
+
+.container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.card {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 220px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    width: 100%;
+    margin: 0 1%;
+    max-width: 700px;
+    /* Set the maximum width of each card to 700 pixels */
+
+}
+
+.card.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Match the width of the front card */
+    height: 100%;
+    /* Match the height of the front card */
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .card.front,
+.container:hover .card.back {
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.container .card.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.back .back-content {
+    color: #935f33;
+    font-family: "Teko", sans-serif;
+
+}
+
+.container .card.front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+
+}
+
+.container:hover .card.back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .card.front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.card.front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.card.front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -0.75rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.card.front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem) {
+    .col {
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .col {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem) {
+    .col {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust the space between cards */
+    justify-content: center;
+}
+
+.col {
+    width: calc(50% - 20px);
+    /* Set each column to 50% width minus the space between them */
+    margin: 10px;
+    /* Adjust margin between columns */
+}
+
+.card {
+    width: 700px;
+    /* Set the width of each card to 700 pixels */
+    margin: 0;
+    /* Remove margin to ensure the cards align properly */
+}
+
+.back-content {
+    text-align: center;
+}
+
+.read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-link:hover {
+    background-color: #555;
+}
+
+.search input {
     padding: 8px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -213,7 +452,8 @@ img {
     outline: 0;
     border: 0;
 }
-.search button{
+
+.search button {
     border-radius: 5px;
     padding: 8px;
     border: 0;
@@ -225,6 +465,7 @@ img {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 @media(max-width:767px) {
     img {
         width: 320px
@@ -289,16 +530,19 @@ img {
     padding: 40px 0;
 }
 
-.footer .container .row {
+.footer .container_footer .row_footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     margin: 30px 0;
+}
 
-
-
+@media(max-width:767px) {
+    .footer .container_footer .row_footer {
+        flex-direction: column;
+    }
 }
 
 .footer h3 {
@@ -308,7 +552,10 @@ img {
     font-weight: 600;
     text-transform: uppercase;
 }
-
+.container_footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .footer p {
     color: #b7b7b7;
     font-size: 20px;

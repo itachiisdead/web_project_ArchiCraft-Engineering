@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
 
 
 <body>
-    <div>
+    <div class="ds">
         <br>
 <h1>Project Details</h1>
 </div>
