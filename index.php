@@ -307,11 +307,11 @@
                 <div class="col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Support</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="services.php">Services</a></li>
+                        <li><a href="index.php">main page</a></li>
+                        <li><a href="port.php">projects</a></li>
                     </ul>
                 </div>
             </div>

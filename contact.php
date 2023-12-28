@@ -9,6 +9,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="contact.css">
     <title>ArchiCraft</title>
+    <script>
+function checkLogin() {
+    <?php if (!isset($_SESSION['logged_in'])): ?>
+    window.location.href = "login-signup.php?redirect=contact.php";
+    <?php endif; ?>
+}
+</script>
 </head>
 
 <body>
@@ -55,7 +62,7 @@
 
         <section class="contact-form">
             <h2>Contact Us</h2>
-            <form method="post" action="contact-form.php">
+            <form method="post" action="contact-form.php" onsubmit="checkLogin()">
                 <div>
                     <label for=" first-name">First Name</label>
                     <input required type="text" name="first-name" placeholder="John" id="first-name">
@@ -109,11 +116,11 @@
                 <div class="col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Support</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="services.php">Services</a></li>
+                        <li><a href="index.php">main page</a></li>
+                        <li><a href="port.php">projects</a></li>
                     </ul>
                 </div>
             </div>

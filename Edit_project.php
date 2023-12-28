@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST['title'] ?? '';
     $architect = $_POST['architect'] ?? '';
     $description = $_POST['desc'] ?? '';
+    $category = $_POST['category'] ?? '';
     $price_range = $_POST['price'] ?? '';
 
     // Check if a file is uploaded
@@ -36,8 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $image_path = $edit_row['image'];
     }
 
-    $stmt = $connect->prepare("UPDATE projects SET image=?, title=?, architect=?, description=?, price_range=? WHERE id=?");
-    $stmt->bind_param("sssssi", $image_path, $title, $architect, $description, $price_range, $id);
+    $stmt = $connect->prepare("UPDATE projects SET image=?, title=?, architect=?, description=?,category=?, price_range=? WHERE id=?");
+    $stmt->bind_param("ssssssi", $image_path, $title, $architect, $description,$category, $price_range, $id);
     if ($stmt->execute()) {
         header("Location: current_projects.php");
     } else {
@@ -157,6 +158,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div>
                         <label for="desc">Description</label>
                         <textarea name="desc" id="desc" required><?php echo isset($edit_row['description']) ? $edit_row['description'] : ''; ?></textarea>
+                    </div>
+                    <div >
+                        <label for="category">Category</label>
+                        <input type="text" placeholder="category" name="category" id="category" value="<?php echo isset($edit_row['category']) ? $edit_row['category'] : ''; ?>" required>
                     </div>
                     <div>
                         <label for="price">Price Range</label>

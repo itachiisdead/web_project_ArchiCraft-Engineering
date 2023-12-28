@@ -24,8 +24,9 @@ else{
     session_start();
     $_SESSION['email'] = $email;
 $_SESSION['logged_in'] = true;
-
-    header("Location: index.php"); // Redirect to home page
+$redirect = isset($_GET['redirect']) ? $_GET['redirect'] : 'contact.php';
+    header("Location: $redirect"); // Redirect to intended page
+   
     echo "Login successful";
   } else {
     // Login failed
